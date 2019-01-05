@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.9.9)  2 JAN 2019 21:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.9.9)  5 JAN 2019 11:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -577,7 +577,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 252.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 252.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 252.
 Package rerunfilecheck Info: File `"Yunyi CV".out' has not changed.
-(rerunfilecheck)             Checksum: 7B3A3C10953F036ED60EFCB7D01104C3;461.
+(rerunfilecheck)             Checksum: 0BCE9927414C2ECB04E49C5C33490EC4;449.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -598,7 +598,7 @@ live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><d:/texlive/201
 7/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/texlive/2017/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/texlive/2017/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmti10.pfb>
-Output written on "Yunyi CV.pdf" (3 pages, 91344 bytes).
+Output written on "Yunyi CV.pdf" (3 pages, 90541 bytes).
 PDF statistics:
  96 PDF objects out of 1000 (max. 8388607)
  77 compressed objects within 1 object stream
