@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.9.9)  7 APR 2019 22:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.9.9)  7 APR 2019 22:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -580,20 +580,20 @@ Missing character: There is no Š in font cmcsc10!
 Missing character: There is no Ã in font cmcsc10!
 Missing character: There is no Š in font cmcsc10!
  [2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 251.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 253.
  [3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 251.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 253.
  (./Yunyi CV.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 251.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 251.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 253.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 253.
 Package rerunfilecheck Info: File `"Yunyi CV".out' has not changed.
-(rerunfilecheck)             Checksum: 0BCE9927414C2ECB04E49C5C33490EC4;449.
+(rerunfilecheck)             Checksum: A7029708340B977E664E15F359291D63;466.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 11.12pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 251.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 253.
  ) 
 Here is how much of TeX's memory you used:
  7309 strings out of 492990
@@ -608,7 +608,7 @@ live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><d:/texlive/201
 7/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/texlive/2017/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/texlive/2017/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmti10.pfb>
-Output written on "Yunyi CV.pdf" (3 pages, 91354 bytes).
+Output written on "Yunyi CV.pdf" (3 pages, 91439 bytes).
 PDF statistics:
  99 PDF objects out of 1000 (max. 8388607)
  78 compressed objects within 1 object stream
