@@ -24,7 +24,7 @@
 
 \documentclass[letterpaper, oneside, final]{scrartcl} % Paper options using the scrartcl class
 
-\usepackage{scrpage2} % Provides headers and footers configuration
+%\usepackage{scrpage2} % Provides headers and footers configuration
 \usepackage{titlesec} % Allows creating custom \section's
 %\usepackage{marvosym} % Allows the use of symbols
 \usepackage{tabularx,colortbl} % Advanced table configurations
@@ -36,8 +36,13 @@
 %\setmainfont{Adobe Garamond Pro} % Main document font
 
 \titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule] % Section formatting
-
-\pagestyle{scrheadings} % Print the headers and footers on all pages
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{} 
+%\cfoot{1630 Linden Dr, Madison {\large\textperiodcentered} WI 53706\\{\Large} \href{mailto://yshen99@wisc.edu}{yshen99@wisc.edu}}
+\cfoot{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+%\pagestyle{scrheadings} % Print the headers and footers on all pages
 
 \addtolength{\voffset}{-0.5in} % Adjust the vertical offset - less whitespace at the top of the page
 \addtolength{\textheight}{3cm} % Adjust the text height - less whitespace at the bottom of the page
@@ -50,12 +55,12 @@
 
 \renewcommand{\headfont}{\normalfont\rmfamily\scshape} % Font settings for footer
 
-\cofoot{
+%\cfoot{
 %\addfontfeature{LetterSpace=20.0}\fontsize{12.5}{17}\selectfont % Letter spacing and font size
 
-1630 Linden Dr. {\large\textperiodcentered} Madison {\large\textperiodcentered} WI 53706\\ % Your mailing address
-{\Large} \href{mailto://yshen99@wisc.edu}{yshen99@wisc.edu} \  % Your email address and phone number
-}
+%1630 Linden Dr. {\large\textperiodcentered} Madison {\large\textperiodcentered} WI 53706\\ % Your mailing address
+%{\Large} \href{mailto://yshen99@wisc.edu}{yshen99@wisc.edu} \  % Your email address and phone number
+%}
 
 %----------------------------------------------------------------------------------------
 
@@ -127,7 +132,7 @@
 	Period & \textbf{May 2020 --- }\\
 	Advisor & \textbf{Claudia Sol\'{i}s-Lemus} \hfill UW Madison\\
 	Title & \textbf{Bayesian Conditional Auto-regressive LASSO for sparse graphic learning with predictors}\\
-	& Develop Bayesian conditional auto-regressive LASSO model and its extensions for high dimensional sparse regression and graphic selection.  
+	& Develop a Bayesian conditional auto-regressive LASSO model and its extensions for high dimensional sparse regression and graphic selection.  
 \end{tabularx}
 
 \vspace{12pt}
@@ -136,7 +141,7 @@
 	Period & \textbf{January 2019 --- April 2020}\\
 	Advisor & \textbf{Tim Van Deelen, Brian Yandell} \hfill UW Madison\\
 	Title & \textbf{Spatially Explicit Modeling of Community Occupancy using Markov Random Field Models with Imperfect Observation: Mesocarnivores in Apostle Islands National Lakeshore}\\
-	& Develop zero-inflated auto-logistic regression model for spatial explicit modeling of animal species distribution and interactions. 
+	& Develop a zero-inflated auto-logistic regression model for spatial explicit modeling of animal species distribution and interactions. 
 	\end{tabularx}
 
 \vspace{12pt}
@@ -145,7 +150,7 @@
  Period & \textbf{October 2018 --- April 2020}\\
  Advisor & \textbf{Tim Van Deelen, Dwayne Etter} \hfill UW Madison\\
  Title & \textbf{Population Reconstruction of White Tailed Deer under Intensive Harvest}\\
-& Develop a dynamic Bayesian network model for time series data in intensive management of white tailed deer.
+& Develop a dynamic Bayesian network model for time series data in intensive management of white-tailed deer.
 \end{tabularx}
 
 \vspace{12pt}
@@ -163,7 +168,7 @@
  Period & \textbf{October 2016 --- October 2017}\\
  Advisor & \textbf{Sheng Li} \hfill Peking University\\
  Title & \textbf{Distribution Mapping of Asiatic Black Bear}\\
-& Distribution modeling of black bear using data from multiple sources with various spatial resolutions with Random Forest model. Develop method for result fusion.
+& Distribution modeling of the black bear using data from multiple sources with various spatial resolutions with the Random Forest model. Develop a method for result fusion.
 \end{tabularx}
 
 
@@ -176,7 +181,7 @@
 	%$[2]$ & Xiaoyun Shi, \textbf{Yunyi Shen} and Sheng Li "Mapping the current distribution of chrysolophus pheasants (\textit{C. pictus} and \textit{C. amherstiae}) to determine the range of potential hybridization" (\textit{in prep})\\
 	
 	Year & \textbf{2019}\\
-	$[1]$ & Jianping Yu, \textbf{Yunyi Shen}, Xiaoyou Song, Xiaonan Chen, Sheng Li and Xiaoli Shen "Evaluating the effectiveness of the functional zones for the protection of black muntjac (\textit{Muntiacus crinifrons}) in the Qianjiangyuan National Park" \textit{Biodiversity}(in Chinese) \\
+	$[1]$ & Jianping Yu, \textbf{Yunyi Shen}, Xiaoyou Song, Xiaonan Chen, Sheng Li, and Xiaoli Shen "Evaluating the effectiveness of the functional zones for the protection of black muntjac (\textit{Muntiacus crinifrons}) in Qianjiangyuan National Park" \textit{Biodiversity}(in Chinese) \\
 	
 \end{tabularx}
 %----------------------------------------------------------------------------------------
@@ -201,7 +206,7 @@
 
 \begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
 	Title & \texttt{IsingOccu}\\
-	Description & Gibbs sampler for a zero-inflate auto-logistic model with auto-logistic zero-inflation process, available on GitHub. \\
+	Description & Gibbs sampler for a zero-inflated auto-logistic model with an auto-logistic zero-inflation process, available on GitHub. \\
 \end{tabularx}
 
 \begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
@@ -247,12 +252,14 @@
 
 \section{Awards and Scholarships}
 \begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+    Year & \textbf{2020}\\
+    Award & Finalist of Janice Lee Fenske Memorial Award \hfill IL U.S.A.\\
 	Year & \textbf{2019}\\
 	 Award & Conservation Leader for Tomorrow Scholarship \hfill IL U.S.A.\\
 	Year & \textbf{2017}\\
 	 Award & Annual Award in Social Works \hfill Peking University\\
-	Year & \textbf{2015}\\
-	 Award & Second Award in Jiang Zehan Cup of Modeling \hfill Beijing, China\\
+	%Year & \textbf{2015}\\
+	 %Award & Second Award in Jiang Zehan Cup of Modeling \hfill Beijing, China\\
 	 Year & \textbf{2013}\\
 	 Award & Silver Medal in Chinese Chemistry Olympiad \hfill Beijing, China\\
 \end{tabularx}
