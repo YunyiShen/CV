@@ -1,0 +1,76 @@
+\begin{thebibliography}{10}
+
+\bibitem{etter2019managing}
+\FormatName{Dwayne Etter}, \FormatName{Timothy~R Van~Deelen}, \FormatName{John
+  Humphreys}, \FormatName{Gary Roloff}, and \FormatName{Yunyi Shen}.
+\newblock Managing white-tailed deer under an evolving paradigm: Effects of
+  density-dependence.
+\newblock In {\em American Fisheries Society \& The Wildlife Society 2019 Joint
+  Annual Conference}. AFS, 2019.
+
+\bibitem{shen2022mSSL}
+\FormatName{Yunyi Shen}, \FormatName{Sameer~K. Deshpande}, and
+  \FormatName{Claudia Sol\'{i}s-Lemus}.
+\newblock Sparse gaussian chain graph learning using the spike-and-slab
+  {LASSO}.
+\newblock \textit{in prep}, 2022+.
+
+\bibitem{shen2020midwest}
+\FormatName{Yunyi Shen}, \FormatName{Dwayne Etter}, and \FormatName{Timothy
+  Van~Deelen}.
+\newblock Age structure effects and population control in urban/suburban
+  white-tailed deer, chicago, il 1992-2006.
+\newblock 2020 Midwest Fish and Wildlife Conference, 2020.
+
+\bibitem{shen2022ISEC}
+\FormatName{Yunyi Shen}, \FormatName{Fan Fan}, \FormatName{Sheng Li}, and
+  \FormatName{Claudia Sol\'{i}s-Lemus}.
+\newblock Direct (conditional) and net (marginal) effects of environmental
+  predictors in multivariate normal and autologistic models for multispecies
+  modeling.
+\newblock 2022 International Statistical Ecology Conference, 2022.
+
+\bibitem{shen2021using}
+\FormatName{Yunyi Shen}, \FormatName{Mingzhang Liu}, \FormatName{Dajun Wang},
+  \FormatName{Xiaoli Shen}, and \FormatName{Sheng Li}.
+\newblock Using an integrative mapping approach to identify the distribution
+  range and conservation needs of a large threatened mammal, the asiatic black
+  bear, in china.
+\newblock {\em Global Ecology and Conservation}, 31:e01831, 2021.
+
+\bibitem{shen2022celeriteQFD}
+\FormatName{Yunyi Shen}, \FormatName{Amber Medina}, \FormatName{Joshua
+  Speagle}, \FormatName{Vianey Leos-Barajas}, and \FormatName{Gwendolyn Eadie}.
+\newblock Simultaneous detrending and flare detection from photometrical data
+  using {Gaussian} process combined with hidden {Markov} model.
+\newblock \textit{in prep}, 2022+.
+
+\bibitem{shen2021spatially}
+\FormatName{Yunyi Shen}, \FormatName{Erik~R Olson}, and \FormatName{Timothy~R
+  Van~Deelen}.
+\newblock Spatially explicit modeling of community occupancy using markov
+  random field models with imperfect observation: Mesocarnivores in apostle
+  islands national lakeshore.
+\newblock {\em Ecological Modelling}, 459:109712, 2021.
+
+\bibitem{shen2020bayesian}
+\FormatName{Yunyi Shen} and \FormatName{Claudia Sol\'{i}s-Lemus}.
+\newblock Bayesian conditional auto-regressive {LASSO} models to learn sparse
+  microbial networks with predictors.
+\newblock {\em arXiv preprint arXiv:2012.08397}, 2020.
+
+\bibitem{shen2021effect}
+\FormatName{Yunyi Shen} and \FormatName{Claudia Sol\'{i}s-Lemus}.
+\newblock The effect of the prior and the experimental design on the inference
+  of the precision matrix in gaussian chain graph models.
+\newblock {\em arXiv preprint arXiv:2107.01306}, 2021.
+
+\bibitem{Yu2019evaluating}
+\FormatName{Jianping Yu}, \FormatName{Yunyi Shen}, \FormatName{Xiaoyou Song},
+  \FormatName{Xiaonan Chen}, \FormatName{Sheng Li}, and \FormatName{Xiaoli
+  Shen}.
+\newblock Evaluating the effectiveness of functional zones for black muntjac
+  (muntiacus crinifrons) protection in qianjiangyuan national park pilot site.
+\newblock {\em Biodiversity Science}, 27(1):5, 2019.
+
+\end{thebibliography}
