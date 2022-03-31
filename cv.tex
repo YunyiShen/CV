@@ -1,0 +1,206 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.11 (19/6/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt,letterpaper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{grey} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+%\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage{soul}
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+
+% to manage publication using bibtex
+\usepackage{bibentry}
+\nobibliography*
+\usepackage[square,sort,comma,numbers]{natbib}
+
+% hightlight your name
+\def\FormatName#1{%
+  \def\myname{Yunyi Shen}%
+  \edef\name{#1}%
+  \ifx\name\myname
+    \textbf{#1}%
+  \else
+    #1%
+  \fi
+}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Yunyi} % Your first name
+\familyname{Shen} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{}
+\address{1630 Linden Dr. Madison, WI, 53706}{}
+%\mobile{Contact: 412-736-4275}
+\email{yshen99@wisc.edu}
+\homepage{http://yunyishen.ml}{http://yunyishen.ml} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+%\extrainfo{additional information}
+% \photo[70pt][0.4pt]{pictures/daniele} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{\textbf{Education}}
+
+\cvitem{2022 -- \ \ \ \ \ \ }{\textbf{Massachusetts Institute of Technology}, Cambridge, MA, United States}
+\cvitem{}{\textbf{PhD, Computer Science}}
+\vspace{1em}
+
+\cvitem{2019 -- 2021}{\textbf{University of Wisconsin-Madison}, Madison, WI, United States}
+\cvitem{}{\textbf{MSc, Statistics}}
+\vspace{1em}
+
+\cvitem{2018 -- 2021}{\textbf{University of Wisconsin-Madison}, Madison, WI, United States}
+\cvitem{}{\textbf{MSc, Wildlife Ecology}}
+\vspace{1em}
+
+\cvitem{2014 -- 2018}{\textbf{Peking University}, Beijing, China}
+\cvitem{}{\textbf{BSc, Integrated Science/Physics \& Biology}}
+\vspace{1em}
+
+%----------------------------------------------------------------------------------------
+%	Pub SECTION
+%----------------------------------------------------------------------------------------
+
+\section{\textbf{Publications and Preprints}}
+\subsection{\underline{\textbf{Working papers}}}
+%\cvitem{}{\bibentry{shen2022mSSGL}}
+\cvitem{}{\bibentry{shen2022mSSL}}
+\cvitem{}{\bibentry{shen2022celeriteQFD}}
+
+%\vspace{1em}
+\subsection{\underline{\textbf{Preprints}}}
+\cvitem{}{\bibentry{shen2021effect}}
+%\cvitem{}{\bibentry{shen2021carlasso}}
+\cvitem{}{\bibentry{shen2020bayesian}}
+
+%\vspace{1em}
+\subsection{\underline{\textbf{Peer reviewed}}}
+\cvitem{}{\bibentry{shen2021using}}
+\cvitem{}{\bibentry{shen2021spatially}}
+\cvitem{}{\bibentry{Yu2019evaluating}}
+\vspace{1em}
+
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{\textbf{Awards and Honor}}
+\cvitem{2020}{Finalist of Janice Lee Fenske Memorial Award of TWS}
+\cvitem{2019}{Conservation Leader for Tomorrow Scholarship}
+\cvitem{2017}{Peking University Annual Award in Social Works}
+\vspace{1em}
+
+\section{\textbf{Grants Funded}}
+\subsection{\underline{\textbf{Co-PI}}}
+\cvitem{2024-2024}{National Park Services PMIS 322581, National Park Services (pending final approval), PI: Timothy Van Deelen}
+\subsection{\underline{\textbf{Co-Investigator}}}
+\cvitem{2020-2022}{Hatch 142 Formula Fund 1023699, USDA, PI: Claudia Sol\'is-Lemus}
+\cvitem{2021-2023}{DSI Catalyst Fund, University of Toronto, PI: Gwendolyn Eadie}
+\vspace{1em}
+
+
+\section{\textbf{Invited Talks}}
+
+\cvitem{2022}{JSC 270/370 Seminar, University of Toronto DoSS. ``Stellar flare detection using HMMs"}
+\vspace{1em}
+
+\section{\textbf{Selected Conference Talks}}
+\cvitem{}{\bibentry{shen2022ISEC}}
+\cvitem{}{\bibentry{shen2020midwest}}
+\cvitem{}{\bibentry{etter2019managing}}
+
+\section{\textbf{Software}}
+
+\cvitem{R packages}{\texttt{CARlasso}: Conditional autoregressive LASSO and extensions, CRAN}
+\cvitem{}{\texttt{linconGaussR}: Sampling multivariate Gaussian under linear constraint, CRAN}
+\cvitem{}{\texttt{robustcov}: Collection of robust precision estimation, CRAN}
+
+\cvitem{Stan}{\texttt{CeleriteQFD}: Stellar flare detection using Gaussian process combined with HMM, GitHub}
+
+\section{\textbf{Teaching}}
+
+\cvitem{2018-2019}{Chemistry 103-104 TA, UW-Madison}
+\cvitem{2016-2017}{Evolution of Human Intelligence TA, Peking University}
+
+
+\section{\textbf{Services}}
+\cvitem{Reviewing}{Ecosphere, Biodiversity \& Conservation}
+\cvitem{Consulting}{Statistical consulting, Qianjiangyuan National Park, Zhejiang, China, 2019-2020}
+\vspace{1em}
+
+\section{\textbf{Outreach}}
+
+\cvitem{2021}{PBS WI meet the lab "data decoder", as "data scientist", \href{https://pbswisconsineducation.org/lab/data-decoders/}{see website}}
+
+\cvitem{2018}{Peking University Biology Museum, as docent}
+
+\cvitem{2016}{\textit{Bo Wo}, Chinese National Geography Magazine, as editor}
+
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+%\clearpage
+
+%\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+%\date{\today} % Letter date
+%\opening{Dear Sir or Madam,} % Opening greeting
+%\closing{Sincerely yours,} % Closing phrase
+%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+
+%\makelettertitle % Print letter title
+
+%\lipsum[1-3] % Dummy text
+
+%\makeletterclosing % Print letter signature
+
+%----------------------------------------------------------------------------------------
+\bibliographystyle{myplain}
+\nobibliography{publications.bib}
+\end{document}
+
+
+
