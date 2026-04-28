@@ -30,7 +30,7 @@
 
 %\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
 \usepackage{soul}
-\usepackage[scale=0.75]{geometry} % Reduce document margins
+\usepackage[scale=0.8]{geometry} % Reduce document margins
 %\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
 %\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
 
@@ -43,11 +43,21 @@
 % hightlight your name
 \def\FormatName#1{%
   \def\myname{Yunyi Shen}%
+  \def\mynamesec{Yunyi Shen"}
+  \def\mynametrd{Yunyi Shen*}
   \edef\name{#1}%
   \ifx\name\myname
     \textbf{#1}%
   \else
-    #1%
+    \ifx\name\mynamesec
+      \textbf{#1}
+    \else
+        \ifx\name\mynametrd
+        \textbf{#1}
+        \else
+        #1%
+        \fi
+    \fi
   \fi
 }
 
@@ -60,10 +70,10 @@
 
 % All information in this block is optional, comment out any lines you don't need
 \title{}
-\address{A224 Russell Lab}{1630 Linden Dr. Madison, WI, 53706}
-%\mobile{Contact: 412-736-4275}
-\email{yshen99@wisc.edu}
-\homepage{yunyishen.ml}{http://yunyishen.ml} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+\address{32-D740}{77 Massachusetts Ave., Cambridge, MA, 02139}
+\mobile{Contact: 608-400-3982}
+\email{yshen99@mit.edu}
+\homepage{yunyishen.github.io}{https://yunyishen.github.io} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
 %\extrainfo{additional information}
 % \photo[70pt][0.4pt]{pictures/daniele} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
 %\quote{"A witty and playful quotation" - John Smith}
@@ -80,105 +90,191 @@
 
 \section{\textbf{Education}}
 
-\cvitem{2022 -- \ \ \ \ \ \ }{\textbf{Massachusetts Institute of Technology}, Cambridge, MA, United States}
-\cvitem{}{\textbf{PhD, Computer Science}}
+\cvitem{06/22--05/26}{\textbf{Massachusetts Institute of Technology}, Cambridge, MA, United States}
+\cvitem{}{\textbf{PhD, Computer Science} (minor in Astronomy)}
 \vspace{1em}
 
-\cvitem{2019 -- 2021}{\textbf{University of Wisconsin-Madison}, Madison, WI, United States}
+\cvitem{06/22--05/24}{\textbf{Massachusetts Institute of Technology}, Cambridge, MA, United States}
+\cvitem{}{\textbf{SM, Computer Science}}
+\vspace{1em}
+
+\cvitem{08/19--05/21}{\textbf{University of Wisconsin-Madison}, Madison, WI, United States}
 \cvitem{}{\textbf{MSc, Statistics}}
 \vspace{1em}
 
-\cvitem{2018 -- 2021}{\textbf{University of Wisconsin-Madison}, Madison, WI, United States}
-\cvitem{}{\textbf{MSc, Wildlife Ecology}}
+\cvitem{08/18--08/21}{\textbf{University of Wisconsin-Madison}, Madison, WI, United States}
+\cvitem{}{\textbf{MSc, Ecology}}
 \vspace{1em}
 
 \cvitem{2014 -- 2018}{\textbf{Peking University}, Beijing, China}
-\cvitem{}{\textbf{BSc, Integrated Science/Physics \& Biology}}
+\cvitem{}{\textbf{BSc, Integrated Science (Biology/Physics)} %(\textit{de facto} minor in Sociology)
+}
 \vspace{1em}
 
+
+\section{\textbf{Employment}}
+\cvitem{07/26 onward}{\textbf{UC Santa Cruz}, Santa Cruz, CA, United States}
+\cvitem{}{\textbf{Assistant Professor} in Statistics}
+\cvitem{06/25--08/25}{\textbf{Citadel Securities}, Miami, FL, United States}
+\cvitem{}{\textbf{Quantitative Research intern}, alternative data alpha, systematic equity}
+\vspace{1em}
+
+\section{\textbf{Research interest}}
+\cvitem{}{Multimodal probabilistic machine learning that integrates domain knowledge and calibration to solve scientific problems in data-scarce, low-signal-to-noise-ratio settings.}
+\vspace{1em}
 %----------------------------------------------------------------------------------------
 %	Pub SECTION
 %----------------------------------------------------------------------------------------
 
 \section{\textbf{Publications and Preprints}}
-\subsection{\underline{\textbf{Working papers}}}
-%\cvitem{}{\bibentry{shen2022mSSGL}}
-\cvitem{}{\bibentry{shen2022mSSL}}
-\cvitem{}{\bibentry{shen2022celeriteQFD}}
+\cvitem{}{* indicating equal-contribution, " indicating corresponding author.}
+%\subsection{\underline{\textbf{Working papers}}}
+%\cvitem{}{\bibentry{shen2022double_trouble_journal}}
 
+
+%\cvitem{}{\bibentry{shen2022celeriteQFD}}
 %\vspace{1em}
-\subsection{\underline{\textbf{Preprints}}}
-\cvitem{}{\bibentry{shen2021effect}}
-%\cvitem{}{\bibentry{shen2021carlasso}}
+
+\subsection{\underline{\textbf{Preprints/Under review/Workshops}}}
+
+\cvitem{}{\underline{\textit{Statistics \& Machine learning methods}}}
+\cvitem{}{\bibentry{shen2025diffusion}}
+\cvitem{}{\bibentry{haucke2025deep}}
+\cvitem{}{\bibentry{berlinghieri2025beyond}}
+\cvitem{}{\bibentry{sun2025reusing}}
 \cvitem{}{\bibentry{shen2020bayesian}}
-
-%\vspace{1em}
-\subsection{\underline{\textbf{Peer reviewed}}}
-\cvitem{}{\bibentry{shen2021using}}
-\cvitem{}{\bibentry{shen2021spatially}}
-\cvitem{}{\bibentry{Yu2019evaluating}}
 \vspace{1em}
+\cvitem{}{\underline{\textit{Domain applications}}}
+
+\cvitem{}{\bibentry{shen2022frontier}}
+\cvitem{}{\bibentry{shen2022minlin}}
+%\vspace{1em}
+%\cvitem{}{\underline{\textit{Astronomy \& Astrophysics}}}
+\cvitem{}{\bibentry{shen2025mixture}}
+\cvitem{}{\bibentry{shen2025variational}}
+
+
+\vspace{1em}
+\subsection{\underline{\textbf{Peer reviewed Journals \& Conferences}}}
+%\subsection{Journals \& Conferences}
+%\vspace{1em}
+\cvitem{}{\underline{\textit{Statistics \& Machine learning methods}}}
+\cvitem{}{\bibentry{huang2025dropping}}
+\cvitem{}{\bibentry{zhao2024explicit}}
+\cvitem{}{\bibentry{shen2022double_trouble_journal}}
+\cvitem{}{\bibentry{shen2024multi}}
+\cvitem{}{\bibentry{burt2024consistent}}
+\cvitem{}{\bibentry{shen2024estimating}}
+\cvitem{}{\bibentry{llm2024}}
+\cvitem{}{\bibentry{shen2022mSSL}}
+\cvitem{}{\bibentry{shen2025reviving}}
+\cvitem{}{\bibentry{huang2024approximations}}
+\cvitem{}{\bibentry{esquivel2024detecting}}
+\cvitem{}{\bibentry{shen2021effect}}
+\cvitem{}{\bibentry{shen2021spatially}}
+\vspace{1em}
+\cvitem{}{\underline{\textit{Domain applications}}}
+\cvitem{}{\bibentry{shen2025nrbdessay}}
+\cvitem{}{\bibentry{jaguar}}
+\cvitem{}{\bibentry{chen2023estimating}}
+\cvitem{}{\bibentry{m2022bats}}
+\cvitem{}{\bibentry{shen2021using}}
+
+\cvitem{}{\bibentry{Yu2019evaluating}}
+%\vspace{1em}
+%\cvitem{}{\underline{\textit{Astronomy \& Astrophysics}}}
+%\subsection{Workshops}
+%\cvitem{}{\bibentry{shen2024sbsde}}
+%\cvitem{}{\bibentry{shen2022double_trouble}}
+\vspace{1em}
+\subsection{\underline{\textbf{Miscellaneous}}}
+\cvitem{}{\bibentry{shen2025wild}}
+
+
 
 
 %----------------------------------------------------------------------------------------
 %	AWARDS SECTION
 %----------------------------------------------------------------------------------------
 
+
+
 \section{\textbf{Awards and Honor}}
-\cvitem{2020}{Finalist of Janice Lee Fenske Memorial Award of TWS}
-\cvitem{2019}{Conservation Leader for Tomorrow Scholarship}
+
+%\subsection{\underline{\textbf{Honor}}}
+%\cvitem{2023-2028}{Honorary Fellow, Department of Forest and Wildlife Ecology, UW-Madison}
+\cvitem{2020}{Finalist of Janice Lee Fenske Memorial Award of The Wildlife Society (TWS)}
+\cvitem{2019}{Conservation Leader for Tomorrow (CLfT) Scholarship}
 \cvitem{2017}{Peking University Annual Award in Social Works}
+\subsection{\underline{\textbf{Travel awards}}}
+\cvitem{2024}{TWS-BWG travel award}
+\cvitem{2023}{BayesComp-2023 travel award}
+\cvitem{2023}{ISBA travel award for BNP2023}
 \vspace{1em}
 
-\section{\textbf{Grants Funded}}
-\subsection{\underline{\textbf{Co-PI}}}
-\cvitem{2024-2024}{National Park Services PMIS 322581, National Park Services (pending final approval), PI: Timothy Van Deelen}
-\subsection{\underline{\textbf{Co-Investigator}}}
-\cvitem{2020-2022}{Hatch 142 Formula Fund 1023699, USDA, PI: Claudia Sol\'is-Lemus}
-\cvitem{2021-2023}{DSI Catalyst Fund, University of Toronto, PI: Gwendolyn Eadie}
+%\section{\textbf{Grants Funded}}
+%\subsection{\underline{\textbf{Co-PI}}}
+%\cvitem{2024}{NPS PMIS 322581,U.S. National Park Services (pending final approval), PI: Timothy Van Deelen (UW-Madison)}
+%\subsection{\underline{\textbf{Co-Investigator}}}
+%\cvitem{2020-2022}{Hatch 142 Formula Fund 1023699, U.S. Department of Agriculture, PI: Claudia Sol\'is-Lemus (UW-Madison)}
+%\cvitem{2021-2023}{DSI Catalyst Fund, University of Toronto, PI: Gwendolyn Eadie (U of Toronto)}
+
 \vspace{1em}
 
 
 \section{\textbf{Invited Talks}}
-
-\cvitem{2022}{Merging statistical theory and analyses at the interface of microbial and "macrobial" ecology workshop. Concordia University, Montr\'eal, Canada}
-\cvitem{2022}{JSC 270/370 Seminar, University of Toronto DoSS, Toronto, Canada. "Stellar flare detection using HMMs"}
+\cvitem{10/2024}{"Wolves in the (west) Great Lake regions population, ecosystem, and economy", Quantitative ecology seminar series, University of Washington.}
+\cvitem{08/2022}{"Conditional probabilities in some multispecies models", Merging statistical theory and analyses at the interface of microbial and "macrobial" ecology workshop. (NSF-funded) Concordia University, Montr\'eal, Canada. }
+\cvitem{05/2022}{"Stellar flare detection using HMM combined with Gaussian process", Stellar Stats Workshop, David A. Dunlap Department of Astronomy and Astrophysics, University of Toronto, Toronto, Canada. }
+\cvitem{05/2022}{"Use cases of high throughput computing in statistical ecology and astronomy", HTCondor week, Center of high throughput computing, UW-Madison, Madison, WI }
+\cvitem{03/2022}{"HMMs in Astronomy", JSC 270/370 Seminar, Department of Statistical Science, University of Toronto, Toronto, Canada. }
 
 \vspace{1em}
 
 \section{\textbf{Selected Conference Talks}}
+\cvitem{}{\bibentry{shen2023JSM}}
 \cvitem{}{\bibentry{shen2022ISEC}}
 \cvitem{}{\bibentry{shen2020midwest}}
-\cvitem{}{\bibentry{etter2019managing}}
+%\cvitem{}{\bibentry{etter2019managing}}
 
 \section{\textbf{Software}}
 
-\cvitem{R packages}{\texttt{CARlasso}: Conditional autoregressive LASSO and extensions, CRAN}
+\cvitem{R packages}{\texttt{mSSL}: Collection of multivariate Spike-and-Slab regression models, GitHub}
+\cvitem{}{\texttt{CARlasso}: Conditional autoregressive LASSO and extensions, CRAN}
 \cvitem{}{\texttt{linconGaussR}: Sampling multivariate Gaussian under linear constraint, CRAN}
 \cvitem{}{\texttt{robustcov}: Collection of robust precision estimation, CRAN}
 
 \cvitem{Stan}{\texttt{CeleriteQFD}: Stellar flare detection using Gaussian process combined with HMM, GitHub}
 
 \section{\textbf{Teaching}}
-
+\cvitem{2023 Spring}{6.7830 (Bayesian Modeling and Inference) TA, MIT}
 \cvitem{2018-2019}{Chemistry 103-104 TA, UW-Madison}
 \cvitem{2016-2017}{Evolution of Human Intelligence TA, Peking University}
 
 
 \section{\textbf{Services}}
-\cvitem{Reviewing}{Ecosphere, Biodiversity \& Conservation}
-\cvitem{Consulting}{Statistical consulting, Qianjiangyuan National Park, Zhejiang, China, 2019-2020}
+\subsection{Reviewing}
+\cvitem{Statistics/ML}{JASA, EJS, JMLR, NeurIPS-2023/2025, ICML-2023/2025, AISTATS-2023/2025, AoAS, Bioinformatics, TMLR}
+\cvitem{Ecology}{J. Appl. Ecol., GECCO, Ecology and Evolution, Biological Conservation, Biodiversity \& Conservation, Ecosphere}
+\subsection{Departmental}
+\cvitem{}{MIT EECS Graduate Student Association Vice President in Academics, 2024}
+\cvitem{}{MIT EECS Graduate Student Association executive board, 2023}
+%\subsection{Diversity, Equity and Inclusion}
+\subsection{Miscellaneous}
+\cvitem{Mentoring}{Student support network member, Undergraduate Network for Increasing Diversity of Ecologists (UNIDE)}
+\cvitem{Consulting}{Statistical consulting, Qianjiangyuan National Park, Zhejiang, China, Summer 2018}
+\cvitem{}{Statistical and data management consulting, Corcovado and Piedras Blancas National Parks, Costa Rica, Summer 2023 (in collaboration with Northland College \& UW-Madison, WI, USA)}
 \vspace{1em}
 
 \section{\textbf{Outreach}}
-
-\cvitem{2021}{PBS WI meet the lab "data decoder", as "data scientist", \href{https://pbswisconsineducation.org/lab/data-decoders/}{see website}}
+\cvitem{2025}{``After Dark'' at MIT museum}
+\cvitem{2021}{PBS WI meet the lab "data decoder" program, as "data scientist", \href{https://pbswisconsineducation.org/lab/data-decoders/}{see website}}
 
 \cvitem{2018}{Peking University Biology Museum, as docent}
 
-\cvitem{2016}{\textit{Bo Wo}, Chinese National Geography Magazine, as editor}
+\cvitem{2016}{\textit{Bo Wu}, Chinese National Geography Magazine, as editor}
 
-
+%
 %----------------------------------------------------------------------------------------
 %	COVER LETTER
 %----------------------------------------------------------------------------------------
